@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Atividades com Instrutores</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Pesquisa sobre Atividades com Instrutores</h1>
+                <p class="subtitle">Ajude-nos a entender melhor suas necessidades e preferências</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <form id="questionario-form" class="form">
+                <!-- Pergunta 1 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">1</span>
+                        Qual atividade você mais gostaria de aprender com um instrutor hoje?
+                    </label>
+                    <div class="input-group">
+                        <input type="text" name="atividade_desejada" class="text-input" placeholder="Ex: Violão, Culinária, Yoga, Programação..." required>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">2</span>
+                        Pagaria por essa atividade?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="pagaria" value="sim" required>
+                            <span class="radio-custom"></span>
+                            Sim
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="pagaria" value="nao" required>
+                            <span class="radio-custom"></span>
+                            Não
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="pagaria" value="talvez" required>
+                            <span class="radio-custom"></span>
+                            Talvez
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">3</span>
+                        Qual seria o valor justo que você pagaria por uma aula com um instrutor qualificado?
+                    </label>
+                    <div class="input-group">
+                        <select name="valor_justo" class="select-input" required>
+                            <option value="">Selecione uma faixa de valor</option>
+                            <option value="ate-50">Até R$ 50</option>
+                            <option value="51-100">R$ 51 - R$ 100</option>
+                            <option value="101-150">R$ 101 - R$ 150</option>
+                            <option value="151-200">R$ 151 - R$ 200</option>
+                            <option value="acima-200">Acima de R$ 200</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">4</span>
+                        Já teve aula com instrutor?
+                    </label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="ja_teve_aula" value="sim" required>
+                            <span class="radio-custom"></span>
+                            Sim
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="ja_teve_aula" value="nao" required>
+                            <span class="radio-custom"></span>
+                            Não
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">5</span>
+                        Como você faria para encontrar um instrutor para atividades?
+                    </label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="como_encontrar" value="google">
+                            <span class="checkbox-custom"></span>
+                            Pesquisa no Google
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="como_encontrar" value="redes-sociais">
+                            <span class="checkbox-custom"></span>
+                            Redes Sociais
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="como_encontrar" value="indicacao">
+                            <span class="checkbox-custom"></span>
+                            Indicação de amigos
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="como_encontrar" value="aplicativo">
+                            <span class="checkbox-custom"></span>
+                            Aplicativo específico
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="como_encontrar" value="academia-escola">
+                            <span class="checkbox-custom"></span>
+                            Academia/Escola
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 -->
+                <div class="question-group">
+                    <label class="question-label">
+                        <span class="question-number">6</span>
+                        Algum outro comentário ou sugestão?
+                    </label>
+                    <div class="input-group">
+                        <textarea name="comentarios" class="textarea-input" placeholder="Compartilhe suas ideias, experiências ou sugestões..." rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Enviar Respostas</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <div id="success-message" class="success-message hidden">
+            <div class="success-content">
+                <div class="success-icon">✓</div>
+                <h3>Obrigado!</h3>
+                <p>Suas respostas foram enviadas com sucesso.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
