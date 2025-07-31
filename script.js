@@ -73,8 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Fecha a mensagem após 3 segundos
         setTimeout(() => {
-            successMessage.classList.add('hidden');
-        }, 3000);
+        successMessage.classList.add('hidden');
+        window.location.href = '/'; // Redireciona para a landing page
+    }, 3000);
         
         // Permite fechar clicando no fundo
         successMessage.addEventListener('click', function(e) {
