@@ -37,8 +37,13 @@ def init_json_file():
             json.dump([], file, ensure_ascii=False, indent=2)
 
 @app.route('/')
+def landing():
+    """Serve a landing page"""
+    return send_from_directory('.', 'landing_page.html')
+
+@app.route('/questionario')
 def index():
-    """Serve a página principal"""
+    """Serve a página do questionário"""
     return send_from_directory('.', 'index.html')
 
 @app.route('/<path:filename>')

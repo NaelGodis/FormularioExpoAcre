@@ -1,0 +1,191 @@
+ /* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary-color: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --success-color: #10b981;
+    --background: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --border-radius: 16px; /* Aumentado para um visual mais suave */
+    --transition: all 0.3s ease;
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--gradient);
+    color: var(--text-primary);
+    line-height: 1.6;
+    
+    /* ALTERAÇÃO: Usa flexbox para centralizar o container na tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 500px; /* ALTERAÇÃO: Container mais compacto */
+    width: 100%;
+    background: var(--background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out;
+    /* ALTERAÇÃO: Removido display:flex e height:100% para o container ter altura automática */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ALTERAÇÃO: O estilo do Header foi movido para o Main Content.
+   A classe .header e suas animações foram removidas para simplificar. */
+
+/* Main Content - Agora é a seção principal do card */
+.main-content {
+    /* ALTERAÇÃO: Incorpora o estilo do antigo header para criar uma seção única */
+    background: var(--gradient);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Espaçamento ajustado entre os elementos */
+}
+
+.title {
+    font-size: 2.5rem; /* Ajustado */
+    font-weight: 700;
+    margin-bottom: 0; /* Removida margem para usar o gap do flex */
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 1.1rem; /* Ajustado */
+    opacity: 0.9;
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.hero-image {
+    max-width: 200px; /* Reduzido para um design mais limpo */
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* ALTERAÇÃO: Imagem circular para um visual moderno */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: var(--transition);
+    margin-top: 1rem; /* Adiciona um espaço acima da imagem */
+    /* Animação de bounce removida para um visual mais estático e elegante */
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Botão de Início */
+.start-button {
+    background: white;
+    /* ALTERAÇÃO: Cor do texto do botão usa a cor primária */
+    color: var(--primary-dark); 
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem; /* Adiciona espaço acima do botão */
+}
+
+/* Removido o efeito de brilho no hover para um estilo mais limpo */
+.start-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:active {
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    background: #f8f9fa;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--border-color); /* Adiciona uma linha sutil de separação */
+}
+
+/* Removidos elementos decorativos e animações desnecessárias para focar no conteúdo */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 2.5rem 1.5rem;
+        gap: 1.25rem;
+    }
+    .title {
+        font-size: 2.25rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .hero-image {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem; /* Mantém um pequeno padding */
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .main-content {
+        padding: 2rem 1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .hero-image {
+        max-width: 150px;
+    }
+    .start-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+    }
+    .footer {
+        padding: 1rem;
+    }
+}
