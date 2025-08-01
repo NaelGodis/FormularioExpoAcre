@@ -4,6 +4,14 @@ Um questionário web bonito e intuitivo para coletar informações sobre prefer�
 
 ## 🚀 Como executar
 
+### 0. Criar e ativar um ambiente virtual (opcional, mas recomendado)
+```bash
+py -m venv venv
+```
+```bash
+venv\Scripts\activate
+```
+
 ### 1. Instalar dependências
 ```bash
 pip install -r requirements.txt
@@ -29,12 +37,15 @@ Abra seu navegador e acesse: `http://localhost:5000`
 
 ```
 questionario-instrutores/
+├── .gitignore          # Arquivo para ignorar arquivos desnecessários no Git
 ├── app.py              # Servidor Flask (backend)
 ├── index.html          # Interface do questionário
 ├── style.css           # Estilos e design
 ├── script.js           # Funcionalidades JavaScript
 ├── requirements.txt    # Dependências Python
 ├── README.md          # Este arquivo
+├── landing_page.html  # Página de boas-vindas
+├── landing_page.css   # Estilos da página de boas-vindas
 ├── respostas.csv      # Dados salvos em CSV (criado automaticamente)
 └── respostas.json     # Dados salvos em JSON (criado automaticamente)
 ```
