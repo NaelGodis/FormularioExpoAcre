@@ -20,7 +20,7 @@ CSV_HEADERS = [
     'valor_justo',
     'ja_teve_aula',
     'como_encontrar',
-    'comentarios'
+    # 'comentarios'
 ]
 
 def init_csv_file():
@@ -56,26 +56,26 @@ def submit_response():
     """Recebe e salva as respostas do questionário"""
     try:
         data = request.get_json()
-        
+
         if not data:
             return jsonify({'error': 'Dados não fornecidos'}), 400
-        
+
         # Valida campos obrigatórios
         required_fields = ['atividade_desejada', 'pagaria', 'valor_justo', 'ja_teve_aula']
         for field in required_fields:
             if field not in data or not data[field]:
                 return jsonify({'error': f'Campo obrigatório ausente: {field}'}), 400
-        
+
         # Prepara os dados para salvar
         timestamp = data.get('timestamp', datetime.now().isoformat())
-        
+
         # Converte lista de checkboxes para string
         como_encontrar = data.get('como_encontrar', [])
         if isinstance(como_encontrar, list):
             como_encontrar_str = '; '.join(como_encontrar)
         else:
             como_encontrar_str = como_encontrar
-        
+
         # Dados para CSV
         csv_row = [
             timestamp,
@@ -84,14 +84,14 @@ def submit_response():
             data.get('valor_justo', ''),
             data.get('ja_teve_aula', ''),
             como_encontrar_str,
-            data.get('comentarios', '')
+            # data.get('comentarios', '')
         ]
-        
+
         # Salva no CSV
         with open(CSV_FILE, 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             writer.writerow(csv_row)
-        
+
         # Salva no JSON (formato mais estruturado)
         json_data = {
             'timestamp': timestamp,
@@ -100,31 +100,31 @@ def submit_response():
             'valor_justo': data.get('valor_justo', ''),
             'ja_teve_aula': data.get('ja_teve_aula', ''),
             'como_encontrar': como_encontrar,
-            'comentarios': data.get('comentarios', '')
+            # 'comentarios': data.get('comentarios', '')
         }
-        
+
         # Lê o arquivo JSON existente
         try:
             with open(JSON_FILE, 'r', encoding='utf-8') as file:
                 existing_data = json.load(file)
         except (FileNotFoundError, json.JSONDecodeError):
             existing_data = []
-        
+
         # Adiciona nova resposta
         existing_data.append(json_data)
-        
+
         # Salva de volta no JSON
         with open(JSON_FILE, 'w', encoding='utf-8') as file:
             json.dump(existing_data, file, ensure_ascii=False, indent=2)
-        
+
         print(f"Nova resposta salva: {json_data}")
-        
+
         return jsonify({
             'success': True,
             'message': 'Resposta salva com sucesso',
             'total_responses': len(existing_data)
         })
-        
+
     except Exception as e:
         print(f"Erro ao salvar resposta: {str(e)}")
         return jsonify({'error': 'Erro interno do servidor'}), 500
@@ -169,11 +169,11 @@ def get_stats():
     try:
         with open(JSON_FILE, 'r', encoding='utf-8') as file:
             data = json.load(file)
-        
+
         total = len(data)
         if total == 0:
             return jsonify({'total': 0, 'stats': {}})
-        
+
         # Estatísticas básicas
         stats = {
             'total_respostas': total,
@@ -183,33 +183,33 @@ def get_stats():
             'atividades_mais_procuradas': {},
             'formas_de_encontrar': {}
         }
-        
+
         for response in data:
             # Contagem de "pagaria"
             pagaria = response.get('pagaria', '')
             stats['pagaria'][pagaria] = stats['pagaria'].get(pagaria, 0) + 1
-            
+
             # Contagem de "já teve aula"
             ja_teve = response.get('ja_teve_aula', '')
             stats['ja_teve_aula'][ja_teve] = stats['ja_teve_aula'].get(ja_teve, 0) + 1
-            
+
             # Contagem de valor justo
             valor = response.get('valor_justo', '')
             stats['valor_justo'][valor] = stats['valor_justo'].get(valor, 0) + 1
-            
+
             # Atividades mais procuradas
             atividade = response.get('atividade_desejada', '').lower()
             if atividade:
                 stats['atividades_mais_procuradas'][atividade] = stats['atividades_mais_procuradas'].get(atividade, 0) + 1
-            
+
             # Formas de encontrar instrutor
             formas = response.get('como_encontrar', [])
             if isinstance(formas, list):
                 for forma in formas:
                     stats['formas_de_encontrar'][forma] = stats['formas_de_encontrar'].get(forma, 0) + 1
-        
+
         return jsonify(stats)
-        
+
     except FileNotFoundError:
         return jsonify({'total': 0, 'stats': {}})
     except Exception as e:
@@ -219,14 +219,14 @@ if __name__ == '__main__':
     # Inicializa os arquivos de dados
     init_csv_file()
     init_json_file()
-    
+
     print("🚀 Servidor iniciado!")
     print("📊 Questionário disponível em: http://localhost:5000")
     print("📈 Estatísticas em: http://localhost:5000/stats")
     print("📥 Download CSV: http://localhost:5000/download/csv")
     print("📥 Download JSON: http://localhost:5000/download/json")
     print("=" * 50)
-    
+
     # Executa o servidor
     app.run(host='0.0.0.0', port=5000, debug=True)
 

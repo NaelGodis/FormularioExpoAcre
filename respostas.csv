@@ -1,8 +1,6 @@
 timestamp,atividade_desejada,pagaria,valor_justo,ja_teve_aula,como_encontrar,comentarios
 2025-07-29T19:17:37.325Z,Violão,sim,51-100,nao,google; indicacao,Gostaria de encontrar um instrutor qualificado e com boa didática para aprender violão do zero.
-2025-07-30T22:28:07.829Z,teste,sim,151-200,nao,aplicativo,teste
 2025-07-30T22:42:21.507Z,Violão,sim,101-150,nao,redes-sociais; indicacao,
-2025-07-30T22:45:57.456Z,teste,sim,51-100,sim,google,tt
 2025-07-30T22:48:21.584Z,Defesa pessoal,sim,101-150,nao,google,
 2025-07-31T00:11:06.371Z,violao,talvez,acima-200,nao,redes-sociais,
 2025-07-31T00:44:35.829Z,Violão,talvez,ate-50,nao,google; redes-sociais; indicacao,
@@ -16,3 +14,16 @@ timestamp,atividade_desejada,pagaria,valor_justo,ja_teve_aula,como_encontrar,com
 2025-07-31T02:20:44.030Z,Volei,sim,101-150,nao,redes-sociais; indicacao,
 2025-07-31T02:21:23.941Z,volei,sim,101-150,nao,indicacao,
 2025-07-31T02:22:13.919Z,ukulele,sim,101-150,nao,google; redes-sociais; indicacao; academia-escola,
+2025-07-31T23:43:12.718Z,Basquete,sim,51-100,nao,redes-sociais
+2025-08-01T00:44:58.845Z,culinaria,sim,acima-200,nao,redes-sociais
+2025-08-01T00:53:01.819Z,violao,talvez,51-100,sim,indicacao
+2025-08-01T01:59:06.511Z,Artes Marciais,sim,151-200,sim,redes-sociais; indicacao
+2025-08-01T02:10:09.388Z,Taekwondo,sim,51-100,sim,redes-sociais
+2025-08-01T02:11:58.458Z,Judo,talvez,151-200,nao,google; redes-sociais
+2025-08-01T02:13:20.981Z,Violão,sim,51-100,sim,indicacao
+2025-08-01T02:43:02.793Z,atividade fisíca,sim,51-100,sim,redes-sociais; indicacao
+2025-08-01T03:10:47.703Z,violao,sim,51-100,sim,redes-sociais; indicacao
+2025-08-01T03:12:17.508Z,violao,sim,101-150,sim,indicacao; academia-escola
+2025-08-01T03:13:24.845Z,teclado,sim,101-150,sim,indicacao; academia-escola
+2025-08-01T03:14:43.054Z,violao,sim,151-200,sim,academia-escola
+2025-08-01T03:21:07.025Z,natação,sim,101-150,sim,redes-sociais

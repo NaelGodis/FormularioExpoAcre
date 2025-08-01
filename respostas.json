@@ -12,17 +12,6 @@
     "comentarios": "Gostaria de encontrar um instrutor qualificado e com boa didática para aprender violão do zero."
   },
   {
-    "timestamp": "2025-07-30T22:28:07.829Z",
-    "atividade_desejada": "teste",
-    "pagaria": "sim",
-    "valor_justo": "151-200",
-    "ja_teve_aula": "nao",
-    "como_encontrar": [
-      "aplicativo"
-    ],
-    "comentarios": "teste"
-  },
-  {
     "timestamp": "2025-07-30T22:42:21.507Z",
     "atividade_desejada": "Violão",
     "pagaria": "sim",
@@ -33,17 +22,6 @@
       "indicacao"
     ],
     "comentarios": ""
-  },
-  {
-    "timestamp": "2025-07-30T22:45:57.456Z",
-    "atividade_desejada": "teste",
-    "pagaria": "sim",
-    "valor_justo": "51-100",
-    "ja_teve_aula": "sim",
-    "como_encontrar": [
-      "google"
-    ],
-    "comentarios": "tt"
   },
   {
     "timestamp": "2025-07-30T22:48:21.584Z",
@@ -200,5 +178,141 @@
       "academia-escola"
     ],
     "comentarios": ""
+  },
+  {
+    "timestamp": "2025-07-31T23:43:12.718Z",
+    "atividade_desejada": "Basquete",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T00:44:58.845Z",
+    "atividade_desejada": "culinaria",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T00:53:01.819Z",
+    "atividade_desejada": "violao",
+    "pagaria": "talvez",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T01:59:06.511Z",
+    "atividade_desejada": "Artes Marciais",
+    "pagaria": "sim",
+    "valor_justo": "151-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais",
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T02:10:09.388Z",
+    "atividade_desejada": "Taekwondo",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T02:11:58.458Z",
+    "atividade_desejada": "Judo",
+    "pagaria": "talvez",
+    "valor_justo": "151-200",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "google",
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T02:13:20.981Z",
+    "atividade_desejada": "Violão",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T02:43:02.793Z",
+    "atividade_desejada": "atividade fisíca",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais",
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T03:10:47.703Z",
+    "atividade_desejada": "violao",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais",
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T03:12:17.508Z",
+    "atividade_desejada": "violao",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "indicacao",
+      "academia-escola"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T03:13:24.845Z",
+    "atividade_desejada": "teclado",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "indicacao",
+      "academia-escola"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T03:14:43.054Z",
+    "atividade_desejada": "violao",
+    "pagaria": "sim",
+    "valor_justo": "151-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "academia-escola"
+    ]
+  },
+  {
+    "timestamp": "2025-08-01T03:21:07.025Z",
+    "atividade_desejada": "natação",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
   }
 ]
