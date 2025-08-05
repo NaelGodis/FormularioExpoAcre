@@ -555,5 +555,163 @@
     "como_encontrar": [
       "redes-sociais"
     ]
+  },
+  {
+    "timestamp": "2025-08-03T23:26:00.903Z",
+    "atividade_desejada": "Natação",
+    "pagaria": "talvez",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:27:21.634Z",
+    "atividade_desejada": "iingles",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:31:36.694Z",
+    "atividade_desejada": "musica",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "google"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:34:43.077Z",
+    "atividade_desejada": "culinaria",
+    "pagaria": "talvez",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "google"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:39:46.753Z",
+    "atividade_desejada": "artes marciais",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais",
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:42:04.583Z",
+    "atividade_desejada": "violão",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "aplicativo"
+    ]
+  },
+  {
+    "timestamp": "2025-08-03T23:50:31.269Z",
+    "atividade_desejada": "Piano",
+    "pagaria": "sim",
+    "valor_justo": "51-100",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "academia-escola"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T00:33:37.440Z",
+    "atividade_desejada": "culinaria",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T01:05:01.914Z",
+    "atividade_desejada": "Desenho",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais",
+      "indicacao"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T01:08:11.752Z",
+    "atividade_desejada": "piano",
+    "pagaria": "sim",
+    "valor_justo": "151-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais",
+      "aplicativo"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T01:31:02.224Z",
+    "atividade_desejada": "Violão",
+    "pagaria": "sim",
+    "valor_justo": "101-150",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "google",
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T01:38:11.125Z",
+    "atividade_desejada": "Programar sites",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "google",
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T01:40:12.298Z",
+    "atividade_desejada": "Tenis",
+    "pagaria": "sim",
+    "valor_justo": "151-200",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "google",
+      "redes-sociais",
+      "indicacao",
+      "aplicativo"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T02:13:12.862Z",
+    "atividade_desejada": "programação",
+    "pagaria": "sim",
+    "valor_justo": "acima-200",
+    "ja_teve_aula": "nao",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
+  },
+  {
+    "timestamp": "2025-08-04T02:56:19.234Z",
+    "atividade_desejada": "Culinaria",
+    "pagaria": "sim",
+    "valor_justo": "ate-50",
+    "ja_teve_aula": "sim",
+    "como_encontrar": [
+      "redes-sociais"
+    ]
   }
 ]
